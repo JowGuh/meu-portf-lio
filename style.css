@@ -142,3 +142,80 @@ footer {
     color: #ff6f61; /* Cor ao passar o mouse */
     transform: translateY(-5px); /* Efeito de levantar */
 }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .social-links {
+        gap: 15px;
+    }
+
+    .social-links a {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .experiencias-container, .projetos-container {
+        flex-direction: column;
+    }
+
+    .experiencia, .projeto {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .projeto img {
+        width: 100%;
+    }
+
+    .contato-info {
+        text-align: center;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
