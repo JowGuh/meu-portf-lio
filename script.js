@@ -49,3 +49,13 @@ projetos.forEach(projeto => {
         projeto.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.1)';
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.getElementById('menu-icon');
+    const navLinks = document.getElementById('nav-links');
+
+    menuIcon.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+    });
+});
