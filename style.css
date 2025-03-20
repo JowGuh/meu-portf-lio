@@ -124,3 +124,21 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
 }
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os ícones */
+    margin-top: 1rem; /* Espaçamento acima dos ícones */
+}
+
+.social-links a {
+    color: #fff; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff6f61; /* Cor ao passar o mouse */
+    transform: translateY(-5px); /* Efeito de levantar */
+}
