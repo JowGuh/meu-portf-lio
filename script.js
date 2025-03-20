@@ -33,15 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Interação com os botões
-const buttons = document.querySelectorAll('.btn');
 
-buttons.forEach(button => {
-    button.addEventListener('click', function(event) {
-        event.preventDefault(); // Evita o comportamento padrão do link
-        alert('Obrigado por visitar meu portfólio!');
-    });
-});
 
 // Efeito de hover nos projetos
 const projetos = document.querySelectorAll('.projeto');
