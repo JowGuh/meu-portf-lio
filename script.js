@@ -7,7 +7,7 @@ function typeWriter() {
     if (index < text.length) {
         heroTitle.innerHTML += text.charAt(index);
         index++;
-        setTimeout(typeWriter, 100); // Velocidade da digitação (100ms por caractere)
+        setTimeout(typeWriter, 300); // Velocidade da digitação (100ms por caractere)
     }
 }
 
