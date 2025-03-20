@@ -128,13 +128,13 @@ footer {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espaçamento entre os ícones */
+    gap: 30px; /* Espaçamento entre os ícones */
     margin-top: 1rem; /* Espaçamento acima dos ícones */
 }
 
 .social-links a {
     color: #fff; /* Cor dos ícones */
-    font-size: 24px; /* Tamanho dos ícones */
+    font-size: 35px; /* Tamanho dos ícones */
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
