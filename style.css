@@ -3,16 +3,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #ffffff; /* Cor padrão do texto */
+    color: #ffffff;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #000000; /* Fundo preto */
+    color: #333;
+    background-color: #000000;
 }
 
-/* Estilos do Header */
 header {
     background: #333;
     color: #fff;
@@ -35,7 +35,6 @@ header nav ul li a {
     font-weight: bold;
 }
 
-/* Seção Hero */
 #hero {
     background: url('assets/images/hero-bg.png') no-repeat center center/cover;
     color: #fff;
@@ -56,19 +55,17 @@ header nav ul li a {
     margin-bottom: 2rem;
 }
 
-/* Botões */
 .btn {
     background: #ff6f61;
     color: #fff;
-    padding: 0.5rem 1.5rem;
+    padding: 0.15rem 2.5rem;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s ease, transform 0.3s ease;
+    transition: background 0.3s ease;
 }
 
 .btn:hover {
     background: #ff3b2f;
-    transform: translateY(-2px); /* Efeito de levantar */
 }
 
 .btn.github {
@@ -80,13 +77,12 @@ header nav ul li a {
     background: #555;
 }
 
-/* Estilos das Seções */
 section {
     padding: 2rem 0;
     text-align: center;
 }
 
-#sobre, #experiencias, #projetos, #contato, #formacao, #cursos, #competencias {
+#sobre, #experiencias, #formacao, #cursos, #competencias, #projetos, #contato {
     background: #212121;
     margin: 1rem;
     padding: 2rem;
@@ -94,80 +90,39 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Seção de Experiências */
-.experiencias-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.experiencia {
-    background: #181818;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.experiencia h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #ff6f61;
-}
-
-.experiencia .empresa {
-    font-size: 1.1rem;
-    color: #ccc;
-    margin-bottom: 0.25rem;
-}
-
-.experiencia .periodo {
-    font-size: 0.9rem;
-    color: #999;
-    margin-bottom: 1rem;
-}
-
-.experiencia .descricao {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #fff;
-}
-
-/* Seção de Projetos */
-.projetos-container {
+.experiencias-container, .formacao-container, .cursos-container, .competencias-container, .projetos-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.projeto {
+.experiencia, .formacao-item, .curso-item, .soft-skills, .hard-skills, .projeto {
     background: #181818;
     margin: 1rem;
     padding: 1rem;
     border-radius: 10px;
-    width: 30%;
+    width: 45%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
-.projeto img {
+.projeto img, .curso-item img {
     width: 100%;
+    max-width: 300px;
     border-radius: 10px;
     margin-bottom: 1rem;
     transition: transform 0.3s ease;
 }
 
-.projeto img:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+.projeto img:hover, .curso-item img:hover {
+    transform: scale(1.05);
 }
 
-/* Seção de Contato */
 .contato-info {
     text-align: left;
     max-width: 600px;
     margin: 0 auto;
 }
 
-/* Footer */
 footer {
     background: #333;
     color: #fff;
@@ -176,7 +131,6 @@ footer {
     margin-top: 2rem;
 }
 
-/* Ícones de Redes Sociais */
 .social-links {
     display: flex;
     justify-content: center;
@@ -195,100 +149,7 @@ footer {
     transform: translateY(-5px);
 }
 
-/* Seção de Formação */
-.formacao-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.formacao-item {
-    background: #181818;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 45%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.formacao-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.formacao-item p {
-    margin: 0.5rem 0;
-}
-
-/* Seção de Cursos */
-.cursos-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.curso-item {
-    background: #181818;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 45%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.curso-item img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    transition: transform 0.3s ease;
-}
-
-.curso-item img:hover {
-    transform: scale(1.05);
-}
-
-.curso-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.curso-item p {
-    margin: 0.5rem 0;
-}
-
-/* Seção de Competências */
-.competencias-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.soft-skills, .hard-skills {
-    background: #181818;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 45%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.soft-skills h3, .hard-skills h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.soft-skills ul, .hard-skills ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.soft-skills li, .hard-skills li {
-    margin: 0.5rem 0;
-}
-
-/* Ajustes para Mobile */
+/* Ajustes para mobile */
 @media (max-width: 768px) {
     body {
         font-size: 16px;
@@ -323,17 +184,17 @@ footer {
         padding: 1rem;
     }
 
-    .experiencias-container, .projetos-container, .formacao-container, .cursos-container, .competencias-container {
+    .experiencias-container, .formacao-container, .cursos-container, .competencias-container, .projetos-container {
         flex-direction: column;
     }
 
-    .experiencia, .projeto, .formacao-item, .curso-item, .soft-skills, .hard-skills {
+    .experiencia, .formacao-item, .curso-item, .soft-skills, .hard-skills, .projeto {
         width: 100%;
         margin: 1rem 0;
     }
 
     .projeto img, .curso-item img {
-        max-width: 100%;
+        max-width: 200px;
     }
 
     .contato-info {
