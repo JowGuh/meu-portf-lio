@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Biblioteca AOS (Animate On Scroll) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -26,11 +28,12 @@
         </nav>
     </header>
 
+    <!-- Seção Hero -->
     <section id="hero">
         <div class="hero-content">
-            <h1 id="hero-title"></h1>
-            <p>Cientista de Dados | Analista de Dados</p>
-            <div class="social-links">
+            <h1 id="hero-title" data-aos="fade-down" data-aos-delay="100"></h1>
+            <p data-aos="fade-up" data-aos-delay="200">Cientista de Dados | Analista de Dados</p>
+            <div class="social-links" data-aos="fade-up" data-aos-delay="300">
                 <a href="https://www.linkedin.com/in/jonathan-gustavo-data/" target="_blank" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
@@ -44,21 +47,23 @@
         </div>
     </section>
 
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>
+    <!-- Seção Sobre -->
+    <section id="sobre" data-aos="fade-up">
+        <h2 data-aos="fade-right">Sobre Mim</h2>
+        <p data-aos="fade-left" data-aos-delay="100">
             Profissional apaixonado por dados e tecnologia, especializado em análise, visualização e ciência de dados.
         </p>
-        <p>
+        <p data-aos="fade-left" data-aos-delay="200">
             Criação de soluções interativas com foco em insights estratégicos para negócios.
         </p>
     </section>
 
-    <section id="experiencias">
-        <h2>Experiência Profissional</h2>
+    <!-- Seção Experiências -->
+    <section id="experiencias" data-aos="fade-up">
+        <h2 data-aos="fade-right">Experiência Profissional</h2>
         <div class="experiencias-container">
             <!-- Experiência 1 -->
-            <div class="experiencia">
+            <div class="experiencia" data-aos="fade-up" data-aos-delay="100">
                 <h3>MarketPlace</h3>
                 <p class="empresa">To Overflow - Taubaté, SP</p>
                 <p class="periodo">Ago 2023 - Jul 2024</p>
@@ -68,7 +73,7 @@
             </div>
     
             <!-- Experiência 2 -->
-            <div class="experiencia">
+            <div class="experiencia" data-aos="fade-up" data-aos-delay="200">
                 <h3>Administrativo</h3>
                 <p class="empresa">Exército Brasileiro - Taubaté, SP</p>
                 <p class="periodo">Mar 2021 - Mar 2023</p>
@@ -79,17 +84,17 @@
         </div>
     </section>
 
-    <!-- Nova Seção: Formação -->
-    <section id="formacao">
-        <h2>Formação</h2>
+    <!-- Seção Formação -->
+    <section id="formacao" data-aos="fade-up">
+        <h2 data-aos="fade-right">Formação</h2>
         <div class="formacao-container">
-            <div class="formacao-item">
+            <div class="formacao-item" data-aos="fade-up" data-aos-delay="100">
                 <h3>Ciência da Computação</h3>
                 <p><strong>Ensino Superior</strong></p>
                 <p class="instituicao">Anhembi Morumbi</p>
                 <p class="periodo">Março 2023 - Dezembro 2026</p>
             </div>
-            <div class="formacao-item">
+            <div class="formacao-item" data-aos="fade-up" data-aos-delay="200">
                 <h3>Cientista de Dados</h3>
                 <p><strong>Curso Profissionalizante</strong></p>
                 <p class="instituicao">EBAC – Escola Britânica de Artes Criativas e Tecnologia</p>
@@ -98,50 +103,49 @@
         </div>
     </section>
 
-    <!-- Nova Seção: Cursos/Atividades Complementares -->
- <!-- Seção de Cursos/Atividades Complementares -->
-<section id="cursos">
-    <h2>Cursos/Atividades Complementares</h2>
-    <div class="cursos-container">
-        <!-- Curso 1 -->
-        <div class="curso-item">
-            <img src="assets/images/certificado-coder.jpg" alt="Certificado Desenvolvedor Python">
-            <h3>Desenvolvedor Python</h3>
-            <p class="instituicao">CoderHouse</p>
-            <p class="periodo">Abril 2024 - Junho 2024</p>
-        </div>
+    <!-- Seção Cursos/Atividades Complementares -->
+    <section id="cursos" data-aos="fade-up">
+        <h2 data-aos="fade-right">Cursos/Atividades Complementares</h2>
+        <div class="cursos-container">
+            <!-- Curso 1 -->
+            <div class="curso-item" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/images/certificado-coder.jpg" alt="Certificado Desenvolvedor Python">
+                <h3>Desenvolvedor Python</h3>
+                <p class="instituicao">CoderHouse</p>
+                <p class="periodo">Abril 2024 - Junho 2024</p>
+            </div>
 
-        <!-- Curso 2 -->
-        <div class="curso-item">
-            <img src="assets/images/certificado-py.jpg" alt="Certificado Programando em Python">
-            <h3>Programando em Python</h3>
-            <p class="instituicao">Udemy (Geek University)</p>
-            <p class="periodo">Novembro 2023 - Dezembro 2023</p>
-        </div>
+            <!-- Curso 2 -->
+            <div class="curso-item" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/images/certificado-py.jpg" alt="Certificado Programando em Python">
+                <h3>Programando em Python</h3>
+                <p class="instituicao">Udemy (Geek University)</p>
+                <p class="periodo">Novembro 2023 - Dezembro 2023</p>
+            </div>
 
-        <!-- Curso 3 -->
-        <div class="curso-item">
-            <img src="assets/images/ceritificado-BD.jpg" alt="Certificado Banco de Dados">
-            <h3>Banco de Dados</h3>
-            <p class="instituicao">Udemy (Felipe Mafra)</p>
-            <p class="periodo">Dezembro 2023 - Janeiro 2024</p>
-        </div>
+            <!-- Curso 3 -->
+            <div class="curso-item" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/images/ceritificado-BD.jpg" alt="Certificado Banco de Dados">
+                <h3>Banco de Dados</h3>
+                <p class="instituicao">Udemy (Felipe Mafra)</p>
+                <p class="periodo">Dezembro 2023 - Janeiro 2024</p>
+            </div>
 
-        <!-- Curso 4 -->
-        <div class="curso-item">
-            <img src="assets/images/certificado-alura.jpg" alt="Certificado Imersão Python">
-            <h3>Imersão Python</h3>
-            <p class="instituicao">Alura</p>
-            <p class="periodo">Março 2024 - Abril 2024</p>
+            <!-- Curso 4 -->
+            <div class="curso-item" data-aos="fade-up" data-aos-delay="400">
+                <img src="assets/images/certificado-alura.jpg" alt="Certificado Imersão Python">
+                <h3>Imersão Python</h3>
+                <p class="instituicao">Alura</p>
+                <p class="periodo">Março 2024 - Abril 2024</p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <!-- Nova Seção: Competências -->
-    <section id="competencias">
-        <h2>Competências</h2>
+    <!-- Seção Competências -->
+    <section id="competencias" data-aos="fade-up">
+        <h2 data-aos="fade-right">Competências</h2>
         <div class="competencias-container">
-            <div class="soft-skills">
+            <div class="soft-skills" data-aos="fade-up" data-aos-delay="100">
                 <h3>Soft Skills</h3>
                 <ul>
                     <li>Atitude positiva</li>
@@ -154,7 +158,7 @@
                     <li>Curiosidade</li>
                 </ul>
             </div>
-            <div class="hard-skills">
+            <div class="hard-skills" data-aos="fade-up" data-aos-delay="200">
                 <h3>Hard Skills</h3>
                 <ul>
                     <li>Python</li>
@@ -172,11 +176,11 @@
         </div>
     </section>
 
-    <!-- Seção de Projetos -->
-    <section id="projetos">
-        <h2>Projetos</h2>
+    <!-- Seção Projetos -->
+    <section id="projetos" data-aos="fade-up">
+        <h2 data-aos="fade-right">Projetos</h2>
         <div class="projetos-container">
-            <div class="projeto">
+            <div class="projeto" data-aos="fade-up" data-aos-delay="100">
                 <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=2106&auto=format&fit=crop" alt="Dashboard Interativo de Previsão de Renda">
                 <h3>Dashboard Interativo de Previsão de Renda</h3>
                 <p>
@@ -185,7 +189,7 @@
                 <a href="https://previsaoderendaebac.streamlit.app/" target="_blank" class="btn">Ver Projeto</a>
                 <a href="https://github.com/JowGuh/previsaoderenda" target="_blank" class="btn github">GitHub</a>
             </div>
-            <div class="projeto">
+            <div class="projeto" data-aos="fade-up" data-aos-delay="200">
                 <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop" alt="HemoInsight: Análise Interativa da Anemia Falciforme">
                 <h3>HemoInsight: Análise Interativa da Anemia Falciforme</h3>
                 <p>
@@ -194,41 +198,5 @@
                 <a href="https://anemiafalciforme.streamlit.app/" target="_blank" class="btn">Ver Projeto</a>
                 <a href="https://github.com/JowGuh/Anemia" target="_blank" class="btn github">GitHub</a>
             </div>
-            <div class="projeto">
-                <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?w=800&auto=format&fit=crop" alt="Análise de Dados de Crédito">
-                <h3>Análise de Dados de Crédito</h3>
-                <p>
-                    Análise exploratória de dados para uma instituição financeira com visualização na web, utilizando Python e bibliotecas como Pandas, Plotly e Streamlit.
-                </p>
-                <a href="https://ebacjonathangustavo.streamlit.app/" target="_blank" class="btn">Ver Projeto</a>
-                <a href="https://github.com/JowGuh/EBAC" target="_blank" class="btn github">GitHub</a>
-            </div>
-            <div class="projeto">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop" alt="Dashboard de Dados">
-                <h3>Dashboard de Dados</h3>
-                <p>
-                    Criação de um aplicativo de dashboard interativo utilizando Python e Streamlit, integrado a um banco de dados MySQL.
-                </p>
-                <a href="https://github.com/JowGuh/DashboardST" target="_blank" class="btn">Ver Projeto</a>
-                <a href="https://github.com/JowGuh/DashboardST" target="_blank" class="btn github">GitHub</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção de Contato -->
-    <section id="contato">
-        <h2>Contato</h2>
-        <div class="contato-info">
-            <p><strong>Email:</strong> <a href="mailto:jonathan.gustavo.lira@gmail.com">jonathan.gustavo.lira@gmail.com</a></p>
-            <p><strong>Telefone:</strong> +55 (12) 98811-9329</p>
-            <p><strong>Localização:</strong> Taubaté, SP</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Jonathan Gustavo. Todos os direitos reservados.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+            <div class="projeto" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d
