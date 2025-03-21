@@ -90,19 +90,49 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.experiencias-container, .projetos-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+#experiencias {
+    background: #212121;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.experiencia, .projeto {
+.experiencias-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Espaçamento entre as experiências */
+}
+
+.experiencia {
     background: #181818;
-    margin: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 10px;
-    width: 30%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.experiencia h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ff6f61; /* Cor destacada para o cargo */
+}
+
+.experiencia .empresa {
+    font-size: 1.1rem;
+    color: #ccc; /* Cor mais clara para a empresa */
+    margin-bottom: 0.25rem;
+}
+
+.experiencia .periodo {
+    font-size: 0.9rem;
+    color: #999; /* Cor mais suave para o período */
+    margin-bottom: 1rem;
+}
+
+.experiencia .descricao {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff; /* Cor do texto da descrição */
 }
 
 .projeto img {
@@ -359,5 +389,28 @@ footer {
 @media (max-width: 768px) {
     .formacao-item, .curso-item, .soft-skills, .hard-skills {
         width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .experiencia {
+        padding: 1rem;
+    }
+
+    .experiencia h3 {
+        font-size: 1.3rem;
+    }
+
+    .experiencia .empresa {
+        font-size: 1rem;
+    }
+
+    .experiencia .periodo {
+        font-size: 0.85rem;
+    }
+
+    .experiencia .descricao {
+        font-size: 0.9rem;
     }
 }
