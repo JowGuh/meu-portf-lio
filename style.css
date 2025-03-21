@@ -149,6 +149,16 @@ footer {
     transform: translateY(-5px);
 }
 
+#contato {
+    text-align: center; /* Centraliza o texto */
+}
+
+.contato-info {
+    display: inline-block; /* Faz o contêiner ocupar apenas o espaço necessário */
+    text-align: left; /* Alinha o texto à esquerda dentro do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+}
+
 /* Ajustes para mobile */
 @media (max-width: 768px) {
     body {
