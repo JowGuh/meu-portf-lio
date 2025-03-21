@@ -59,3 +59,9 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('active');
     });
 });
+
+// Inicializa a AOS
+AOS.init({
+    duration: 1000, // Duração da animação em milissegundos
+    once: true, // A animação ocorre apenas uma vez
+});
