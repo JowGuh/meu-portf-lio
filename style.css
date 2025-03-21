@@ -262,7 +262,6 @@ footer {
 }
 
 /* Estilos para a seção de Cursos */
-/* Estilos para a seção de Cursos */
 #cursos {
     background: #212121;
     margin: 1rem;
@@ -288,9 +287,15 @@ footer {
 }
 
 .curso-item img {
-    width: 100%;
+    width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
+    max-width: 300px; /* Define um tamanho máximo para a imagem */
     border-radius: 10px;
     margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.curso-item img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
 .curso-item h3 {
@@ -307,8 +312,11 @@ footer {
     .curso-item {
         width: 100%;
     }
-}
 
+    .curso-item img {
+        max-width: 200px; /* Reduz o tamanho máximo da imagem em telas menores */
+    }
+}
 /* Estilos para a seção de Competências */
 #competencias {
     background: #212121;
