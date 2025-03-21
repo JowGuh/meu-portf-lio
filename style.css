@@ -3,16 +3,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #ffffff;
+    color: #ffffff; /* Cor padrão do texto */
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #000000;
+    background-color: #000000; /* Fundo preto */
 }
 
+/* Estilos do Header */
 header {
     background: #333;
     color: #fff;
@@ -35,6 +35,7 @@ header nav ul li a {
     font-weight: bold;
 }
 
+/* Seção Hero */
 #hero {
     background: url('assets/images/hero-bg.png') no-repeat center center/cover;
     color: #fff;
@@ -55,17 +56,19 @@ header nav ul li a {
     margin-bottom: 2rem;
 }
 
+/* Botões */
 .btn {
     background: #ff6f61;
     color: #fff;
-    padding: 0.15rem 2.5rem;
+    padding: 0.5rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
     background: #ff3b2f;
+    transform: translateY(-2px); /* Efeito de levantar */
 }
 
 .btn.github {
@@ -77,12 +80,13 @@ header nav ul li a {
     background: #555;
 }
 
+/* Estilos das Seções */
 section {
     padding: 2rem 0;
     text-align: center;
 }
 
-#sobre, #experiencias, #projetos, #contato {
+#sobre, #experiencias, #projetos, #contato, #formacao, #cursos, #competencias {
     background: #212121;
     margin: 1rem;
     padding: 2rem;
@@ -90,18 +94,11 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#experiencias {
-    background: #212121;
-    margin: 1rem;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+/* Seção de Experiências */
 .experiencias-container {
     display: flex;
     flex-direction: column;
-    gap: 2rem; /* Espaçamento entre as experiências */
+    gap: 2rem;
 }
 
 .experiencia {
@@ -114,39 +111,63 @@ section {
 .experiencia h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #ff6f61; /* Cor destacada para o cargo */
+    color: #ff6f61;
 }
 
 .experiencia .empresa {
     font-size: 1.1rem;
-    color: #ccc; /* Cor mais clara para a empresa */
+    color: #ccc;
     margin-bottom: 0.25rem;
 }
 
 .experiencia .periodo {
     font-size: 0.9rem;
-    color: #999; /* Cor mais suave para o período */
+    color: #999;
     margin-bottom: 1rem;
 }
 
 .experiencia .descricao {
     font-size: 1rem;
     line-height: 1.6;
-    color: #fff; /* Cor do texto da descrição */
+    color: #fff;
+}
+
+/* Seção de Projetos */
+.projetos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projeto {
+    background: #181818;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .projeto img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 1rem;
+    transition: transform 0.3s ease;
 }
 
+.projeto img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Seção de Contato */
 .contato-info {
     text-align: left;
     max-width: 600px;
     margin: 0 auto;
 }
 
+/* Footer */
 footer {
     background: #333;
     color: #fff;
@@ -155,24 +176,119 @@ footer {
     margin-top: 2rem;
 }
 
+/* Ícones de Redes Sociais */
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Espaçamento entre os ícones */
-    margin-top: 1rem; /* Espaçamento acima dos ícones */
+    gap: 30px;
+    margin-top: 1rem;
 }
 
 .social-links a {
-    color: #fff; /* Cor dos ícones */
-    font-size: 35px; /* Tamanho dos ícones */
+    color: #fff;
+    font-size: 35px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #ff6f61; /* Cor ao passar o mouse */
-    transform: translateY(-5px); /* Efeito de levantar */
+    color: #ff6f61;
+    transform: translateY(-5px);
 }
 
+/* Seção de Formação */
+.formacao-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.formacao-item {
+    background: #181818;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formacao-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.formacao-item p {
+    margin: 0.5rem 0;
+}
+
+/* Seção de Cursos */
+.cursos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.curso-item {
+    background: #181818;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.curso-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.curso-item img:hover {
+    transform: scale(1.05);
+}
+
+.curso-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.curso-item p {
+    margin: 0.5rem 0;
+}
+
+/* Seção de Competências */
+.competencias-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.soft-skills, .hard-skills {
+    background: #181818;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.soft-skills h3, .hard-skills h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.soft-skills ul, .hard-skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.soft-skills li, .hard-skills li {
+    margin: 0.5rem 0;
+}
+
+/* Ajustes para Mobile */
 @media (max-width: 768px) {
     body {
         font-size: 16px;
@@ -207,17 +323,17 @@ footer {
         padding: 1rem;
     }
 
-    .experiencias-container, .projetos-container {
+    .experiencias-container, .projetos-container, .formacao-container, .cursos-container, .competencias-container {
         flex-direction: column;
     }
 
-    .experiencia, .projeto {
+    .experiencia, .projeto, .formacao-item, .curso-item, .soft-skills, .hard-skills {
         width: 100%;
         margin: 1rem 0;
     }
 
-    .projeto img {
-        width: 100%;
+    .projeto img, .curso-item img {
+        max-width: 100%;
     }
 
     .contato-info {
@@ -247,170 +363,5 @@ footer {
 
     .nav-links.active {
         display: flex;
-    }
-}
-
-
-
-
-
-
-
-
-
-/* Estilos para a seção de Formação */
-#formacao {
-    background: #212121;
-    margin: 1rem;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.formacao-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.formacao-item {
-    background: #181818;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 45%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.formacao-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.formacao-item p {
-    margin: 0.5rem 0;
-}
-
-/* Estilos para a seção de Cursos */
-#cursos {
-    background: #212121;
-    margin: 1rem;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.cursos-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.curso-item {
-    background: #181818;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 45%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.curso-item img {
-    width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
-    max-width: 300px; /* Define um tamanho máximo para a imagem */
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    transition: transform 0.3s ease;
-}
-
-.curso-item img:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
-}
-
-.curso-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.curso-item p {
-    margin: 0.5rem 0;
-}
-
-/* Ajustes para mobile */
-@media (max-width: 768px) {
-    .curso-item {
-        width: 100%;
-    }
-
-    .curso-item img {
-        max-width: 200px; /* Reduz o tamanho máximo da imagem em telas menores */
-    }
-}
-/* Estilos para a seção de Competências */
-#competencias {
-    background: #212121;
-    margin: 1rem;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.competencias-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.soft-skills, .hard-skills {
-    background: #181818;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 45%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.soft-skills h3, .hard-skills h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.soft-skills ul, .hard-skills ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.soft-skills li, .hard-skills li {
-    margin: 0.5rem 0;
-}
-
-/* Ajustes para mobile */
-@media (max-width: 768px) {
-    .formacao-item, .curso-item, .soft-skills, .hard-skills {
-        width: 100%;
-    }
-}
-
-
-@media (max-width: 768px) {
-    .experiencia {
-        padding: 1rem;
-    }
-
-    .experiencia h3 {
-        font-size: 1.3rem;
-    }
-
-    .experiencia .empresa {
-        font-size: 1rem;
-    }
-
-    .experiencia .periodo {
-        font-size: 0.85rem;
-    }
-
-    .experiencia .descricao {
-        font-size: 0.9rem;
     }
 }
