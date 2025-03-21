@@ -262,6 +262,7 @@ footer {
 }
 
 /* Estilos para a seção de Cursos */
+/* Estilos para a seção de Cursos */
 #cursos {
     background: #212121;
     margin: 1rem;
@@ -283,6 +284,13 @@ footer {
     border-radius: 10px;
     width: 45%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.curso-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
 }
 
 .curso-item h3 {
@@ -292,6 +300,13 @@ footer {
 
 .curso-item p {
     margin: 0.5rem 0;
+}
+
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+    .curso-item {
+        width: 100%;
+    }
 }
 
 /* Estilos para a seção de Competências */
