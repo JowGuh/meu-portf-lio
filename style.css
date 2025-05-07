@@ -117,6 +117,20 @@ section {
     transform: scale(1.05);
 }
 
+.curso-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+    border: 2px solid #ff6f61;
+}
+
+.curso-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 111, 97, 0.3);
+}
+
 .contato-info {
     text-align: left;
     max-width: 600px;
