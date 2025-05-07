@@ -131,6 +131,14 @@ section {
     box-shadow: 0 5px 15px rgba(255, 111, 97, 0.3);
 }
 
+.ebac-certificado {
+    border: 2px solid #00a8ff; /* Azul EBAC */
+}
+
+.ebac-certificado:hover {
+    box-shadow: 0 5px 15px rgba(0, 168, 255, 0.3);
+}
+
 .contato-info {
     text-align: left;
     max-width: 600px;
